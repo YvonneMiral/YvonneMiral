@@ -4,7 +4,7 @@
 
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yvonne-miral-98a84817a/)
-[![OnlineJobs](https://img.shields.io/badge/OnlineJobs.ph-%2300A859.svg?logoColor=white)](https://v2.onlinejobs.ph/jobseekers)
+[![OnlineJobs](https://img.shields.io/badge/OnlineJobs.ph-%2300A859.svg?logoColor=white)](https://www.onlinejobs.ph/jobseekers/info/2102218)
 
 
 # 💻 Tech Stack:
