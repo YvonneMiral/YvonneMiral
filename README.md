@@ -1,7 +1,9 @@
 # 💫 About Me:
 📍 Iligan City, Philippines  <br>
 📧 yvonne.miral@gmail.com <br>
-📱 [WhatsApp: 09268264855](https://wa.me/639268264855)
+📱 [WhatsApp: 09268264855](https://wa.me/639268264855) <br>
+📞 [Viber: 09268264855](viber://chat?number=+639268264855)
+
 
 
 
