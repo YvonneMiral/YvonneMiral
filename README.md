@@ -8,7 +8,7 @@
 
 
 ## 🌐 Socials:
-[![GitHub](https://img.shields.io/badge/Github-003A9B.svg?logo=github&logoColor=white)](https://github.com/YvonneMiral)
+[![GitHub followers](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white&label=GitHub&color=181717)](https://github.com/YvonneMiral)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yvonne-miral-98a84817a/)
 [![OnlineJobs](https://img.shields.io/badge/OnlineJobs.ph-%2300A859.svg?logoColor=white)](https://www.onlinejobs.ph/jobseekers/info/2102218)
 [![Upwork](https://img.shields.io/badge/Upwork-6fda44.svg?logo=upwork&logoColor=white)](https://www.upwork.com/freelancers/~01f963154e0e51501b?mp_source=share)
