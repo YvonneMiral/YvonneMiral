@@ -49,8 +49,8 @@ export default function Navbar() {
           <li><ScrollLink to="about" smooth duration={600} offset={-80}>About</ScrollLink></li>
           <li><ScrollLink to="education" smooth duration={600} offset={-80}>Education</ScrollLink></li>
           <li><ScrollLink to="work" smooth duration={600} offset={-80}>Work Experience</ScrollLink></li>
-          <li><ScrollLink to="services" smooth duration={600} offset={-80}>Services</ScrollLink></li>
           <li><ScrollLink to="skills" smooth duration={600} offset={-80}>Skills</ScrollLink></li>
+          <li><ScrollLink to="services" smooth duration={600} offset={-80}>Services</ScrollLink></li>
           <li><ScrollLink to="projects" smooth duration={600} offset={-80}>Projects</ScrollLink></li>
           <li><ScrollLink to="FAQ" smooth duration={600} offset={-80}>FAQ</ScrollLink></li>
           <li><ScrollLink to="contact" smooth duration={600} offset={-80}>Contact</ScrollLink></li>
