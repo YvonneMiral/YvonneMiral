@@ -24,6 +24,7 @@ export default function About() {
   return (
     <>
       {/* ABOUT SECTION */}
+      {/* ABOUT SECTION */}
       <section className="about-modern">
         <div className="about-wrapper">
           <div className="about-photo">
