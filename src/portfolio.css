@@ -370,11 +370,13 @@ main {
   border-radius: 10px;
   font-weight: 600;
   transition: 0.3s;
+   text-decoration: none;
 }
 
 .btn-cyber:hover {
   transform: translateY(-3px);
   box-shadow: 0 0 20px rgba(0, 209, 255, 0.4);
+   text-decoration: none;
 }
 
 .btn-outline {
@@ -384,12 +386,15 @@ main {
   border-radius: 10px;
   font-weight: 600;
   transition: 0.3s;
+   text-decoration: none;
 }
 
 .btn-outline:hover {
   border-color: #ff0078;
   color: #ff0078;
+  text-decoration: none;
 }
+
 
 /* IMAGE */
 .neo-image {
