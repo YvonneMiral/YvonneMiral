@@ -542,12 +542,12 @@ export default function Hero() {
     {
       icon: <FaCode size={40} color="#0d4564" />,
       title: "Web Development",
-      desc: "I create modern, responsive, and high-performing websites that look great on any device. From personal portfolios to full-scale business platforms, I build sites that are fast, secure, and easy to manage — helping you connect with your audience and grow your online presence.",
+      desc: "I create modern, responsive, and high-performing websites that look great on any device. From personal portfolios to full-scale business platforms, I build sites that are fast, secure, and easy to manage helping you connect with your audience and grow your online presence.",
     },
     {
       icon: <FaPencilRuler size={40} color="#0d4564" />,
       title: "UI/UX Design",
-      desc: "I design intuitive and visually appealing user interfaces that focus on real user needs. My approach combines creativity and usability — ensuring your product is not only beautiful but also delivers a smooth and satisfying experience that keeps users engaged.",
+      desc: "I design intuitive and visually appealing user interfaces that focus on real user needs. My approach combines creativity and usability ensuring your product is not only beautiful but also delivers a smooth and satisfying experience that keeps users engaged.",
     },
     {
       icon: <FaVideo size={40} color="#0d4564" />,
@@ -747,7 +747,7 @@ export default function Hero() {
             Featured <span>Projects</span>
           </h2>
           <p>
-            Each project I’ve built merges creativity with precision — solving real problems through design and code.
+            Each project I’ve built merges creativity with precision solving real problems through design and code.
           </p>
         </div>
 
