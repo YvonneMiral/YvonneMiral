@@ -16,6 +16,8 @@ import bg4 from "./assets/bg4.gif";
 import bg from "./assets/bg.png";
 import profile from "./assets/Yvonne.png"; 
 import OnlineJobsLogo from "./assets/OnlineJobsLogo.png";
+import thesis from "./assets/Thesis.pdf";
+import thesisimg from "./assets/Thesis.png";
 
 function TypingText({ text = "", speed = 90, cursor = "|" }) {
   const [display, setDisplay] = useState("");
@@ -315,18 +317,31 @@ export default function Hero() {
             },
             {
               img: weatherImg,
-              title: "Weather Prediction & Monitoring System",
+              title: "Weather Prediction & Monitoring System (DOST-Funded Project)",
               desc: "A centralized system for flood monitoring, integrating IoT sensors with predictive AI analytics.",
               tech: ["Python", "AI", "MySQL", "PHP"],
               link: "https://iliganweather.com",
+            },
+            {
+              img: thesisimg,
+              title: "Developing a Smart Drainage Waste Management and Notification System (Undergraduate Thesis Article)",
+              desc: "A Smart Drainage Waste Management system using IoT to improve waste collection efficiency and support sustainable urban practices.",
+              tech: ["Thesis", "IoT", "Microcontroller", "Sensors"],
+              link: thesis, 
+              isPDF: true,
             },
               ].map((p, i) => (
                 <div key={i} className="modern-project-card">
                   <div className="project-image">
                     <img src={p.img} alt={p.title} />
                     <div className="image-overlay">
-                      <a href={p.link} target="_blank" rel="noopener noreferrer" className="visit-btn">
-                        Visit Site →
+                      <a 
+                        href={p.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="visit-btn"
+                      >
+                        {p.isPDF ? "Read Article →" : "Visit Site →"} {/* ✅ conditional text */}
                       </a>
                     </div>
                   </div>
