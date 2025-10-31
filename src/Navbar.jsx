@@ -1,61 +1,92 @@
-// import { Link } from "react-router-dom";
-
-// export default function Navbar() {
-//   return (
-//     <header>
-//       <nav className="navbar">
-//         <div className="logo">Yvonne</div>
-//         <ul>
-//           <li><Link to="/">Home</Link></li>
-//           <li><Link to="/about">About</Link></li>
-//           <li><Link to="/skills">Skills</Link></li>
-//           <li><Link to="/projects">Projects</Link></li>
-//           <li><Link to="/contact">Contact</Link></li>
-//         </ul>
-//       </nav>
-//     </header>
-//   );
-// }
-
-
-
-
-
-
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
-import logo from "./assets/ymlogo.png"; // uploaded logo
+import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
+    const handleScroll = () => setScrolled(window.scrollY > 60);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  return (
-    <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
-      <div className="nav-container">
-        <ScrollLink to="home" smooth={true} duration={600} offset={-80} className="logo">
-          <img src={logo} alt="Logo" className="logo-image" />
-        </ScrollLink>
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+  const closeMenu = () => setMenuOpen(false);
 
-        <ul className="nav-links">
-          <li><ScrollLink to="home" smooth duration={600} offset={-80}>Home</ScrollLink></li>
-          <li><ScrollLink to="about" smooth duration={600} offset={-80}>About</ScrollLink></li>
-          <li><ScrollLink to="education" smooth duration={600} offset={-80}>Education</ScrollLink></li>
-          <li><ScrollLink to="work" smooth duration={600} offset={-80}>Work Experience</ScrollLink></li>
-          <li><ScrollLink to="skills" smooth duration={600} offset={-80}>Skills</ScrollLink></li>
-          <li><ScrollLink to="services" smooth duration={600} offset={-80}>Services</ScrollLink></li>
-          <li><ScrollLink to="projects" smooth duration={600} offset={-80}>Projects</ScrollLink></li>
-          <li><ScrollLink to="FAQ" smooth duration={600} offset={-80}>FAQ</ScrollLink></li>
-          <li><ScrollLink to="contact" smooth duration={600} offset={-80}>Contact</ScrollLink></li>
+  const navLinks = [
+    { id: "home", label: "Home" },
+    { id: "about", label: "About" },
+    { id: "path", label: "Education & Experience" },
+    { id: "skills", label: "Skills" },
+    { id: "services", label: "Services" },
+    { id: "projects", label: "Projects" },
+    { id: "FAQ", label: "FAQ" },
+    { id: "contact", label: "Contact" },
+  ];
+
+  return (
+    <>
+      <nav className={`neo-navbar ${scrolled ? "scrolled" : ""}`}>
+        <div className="nav-inner">
+          <h1 className="nav-title">
+            <ScrollLink to="home" smooth duration={600} offset={-80}>
+              Y<span>M</span>
+            </ScrollLink>
+          </h1>
+
+
+          {/* Desktop Links */}
+          <ul className="nav-links">
+            {navLinks.map((link) => (
+              <li key={link.id}>
+                <ScrollLink
+                  to={link.id}
+                  smooth
+                  duration={600}
+                  offset={-80}
+                  onClick={closeMenu}
+                >
+                  {link.label}
+                </ScrollLink>
+              </li>
+            ))}
+          </ul>
+
+          {/* Mobile Menu Button */}
+          <button className="menu-btn" onClick={toggleMenu}>
+            {menuOpen ? <X size={26} /> : <Menu size={26} />}
+          </button>
+        </div>
+      </nav>
+
+      {/* Mobile Menu */}
+      <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
+        {/* Close Button Inside */}
+        <button className="close-btn" onClick={closeMenu}>
+          <X size={28} />
+        </button>
+
+        <ul>
+          {navLinks.map((link) => (
+            <li key={link.id}>
+              <ScrollLink
+                to={link.id}
+                smooth
+                duration={600}
+                offset={-80}
+                onClick={closeMenu}
+              >
+                {link.label}
+              </ScrollLink>
+            </li>
+          ))}
         </ul>
       </div>
-    </nav>
+
+      {/* Overlay */}
+      {menuOpen && <div className="menu-overlay" onClick={closeMenu}></div>}
+    </>
   );
 }

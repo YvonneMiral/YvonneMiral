@@ -1,0 +1,446 @@
+{/* HERO SECTION */}
+<section
+  id="home"
+  className="hero"
+  style={{
+    backgroundImage: `url(${bg})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
+  {/* Overlay for visibility */}
+  <div className="hero-overlay"></div>
+
+  <div className="hero-container">
+    <div className="hero-left">
+      <p className="eyebrow">WEBSITE • UI/UX • MULTIMEDIA</p>
+      <h1>
+        Hi, I'm <TypingText text="Yvonne Miral" speed={80} cursor="|" />
+      </h1>
+      <p className="subtitle">
+        A passionate Website & UI/UX Developer and Video Editor who turns ideas into interactive digital experiences.
+        Based in Iligan City, Philippines.
+      </p>
+
+      <div className="chip-row">
+        <span className="chip">React & .NET</span>
+        <span className="chip">MySQL</span>
+        <span className="chip">Python</span>
+        <span className="chip">JSON</span>
+        <span className="chip">PHP</span>
+        <span className="chip">Javascript</span>
+        <span className="chip">Video Editing</span>
+      </div>
+
+      <div className="cta">
+        <ScrollLink
+          className="btn btn-primary"
+          to="projects"
+          smooth={true}
+          duration={500}
+          offset={-50}
+        >
+          <i className="fa-solid fa-rocket"></i> See Projects
+        </ScrollLink>
+        <a
+          className="btn btn-ghost"
+          href={resumePDF}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fa-regular fa-file-lines"></i> View Resume
+        </a>
+      </div>
+    </div>
+
+    <div className="hero-right">
+      <img src={profile} alt="Yvonne Miral" className="hero-image" />
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #0a1030, #1e2b60);
+  color: #fff;
+  padding: 2rem;
+}
+
+/* Container */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Left Side */
+.hero-left {
+  flex: 1;
+}
+
+.eyebrow {
+  color: #00d1ff;
+  /* font-weight: 900; */
+  /* letter-spacing: 0.18em; */
+
+  text-transform: uppercase;
+  /* margin-bottom: 1rem; */
+  /* display: block; */
+}
+
+.hero-left h1 {
+
+  line-height: 1.05;
+  margin: 0.25rem 0 1rem;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  margin: 0 0 1.1rem;
+}
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 1.25rem;
+}
+
+.chip {
+  font-weight: 700;
+
+  color: #fff;
+  border: 1px solid var(--border);
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  background: #0d4564;
+}
+
+.cta {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: #00d1ff;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #fff;
+  color: #0d4564;
+}
+
+.btn-ghost {
+  background: #1f2937;
+  color: #fff;
+}
+
+.btn-ghost:hover {
+  background: #374151;
+}
+
+.highlight {
+  color: #00d1ff;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.typing-cursor {
+  display: inline-block;
+  margin-left: 6px;
+  width: 10px;
+  animation: blink 1s steps(2, start) infinite;
+  color: #00d1ff;
+  font-weight: 900;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* RIGHT SIDE */
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #0d4564;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* RESPONSIVE BREAKPOINTS */
+@media (max-width: 1024px) {
+  .hero {
+    padding-top: 8rem;
+  }
+
+  .hero-container {
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  .subtitle {
+    max-width: 100%;
+  }
+
+  .hero-image {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 7rem;
+  }
+
+  .hero-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-left {
+    align-items: center;
+  }
+
+  .chip-row {
+    justify-content: center;
+  }
+
+  .cta {
+    justify-content: center;
+  }
+
+  .hero-image {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 6rem 1rem 2rem;
+  }
+
+  .chip {
+    padding: 0.3rem 0.5rem;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SERVICES SECTION */
+.services-section {
+  padding: clamp(4rem, 8vw, 6rem) clamp(1rem, 5vw, 3rem);
+  background: linear-gradient(135deg, #0b0f1a, #0d4564);
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Subtitle */
+.services-section .section-subtitle {
+  color: #00d1ff;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  display: block;
+}
+
+/* Title */
+.services-section .section-title {
+  font-weight: 700;
+  margin-bottom: clamp(2rem, 6vw, 3.5rem);
+  line-height: 1.2;
+}
+
+.services-section .section-title span {
+  color: #00d1ff;
+}
+
+/* Service Card Grid */
+.services-section .service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: clamp(1.5rem, 4vw, 2.5rem);
+  justify-items: center;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Service Card */
+.services-section .service-card {
+  background: #121826;
+  border-radius: 16px;
+  padding: clamp(1.5rem, 3vw, 2rem);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0, 209, 255, 0.1);
+  width: 100%;
+  max-width: 360px;
+}
+
+.services-section .service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 209, 255, 0.25);
+}
+
+/* Icon Box */
+.services-section .service-card .icon-box {
+  width: clamp(60px, 10vw, 80px);
+  height: clamp(60px, 10vw, 80px);
+  background: #00d1ff;
+  color: #0b0f1a;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto 1rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.services-section .service-card:hover .icon-box {
+  background: #00a8c6;
+  transform: scale(1.1);
+}
+
+/* Card Text */
+.services-section .service-card h3 {
+
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.services-section .service-card p {
+
+  line-height: 1.6;
+  color: #cfd8dc;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* -------------------- RESPONSIVE -------------------- */
+
+/* Tablet adjustments */
+@media (max-width: 992px) {
+  .services-section .section-title {
+    margin-bottom: 2.5rem;
+  }
+
+  .services-section .service-card {
+    max-width: 320px;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .services-section {
+    padding: 3.5rem 1rem;
+  }
+
+  .services-section .service-cards {
+    gap: 1.5rem;
+  }
+
+  .services-section .service-card {
+    padding: 1.5rem 1rem;
+  }
+}
