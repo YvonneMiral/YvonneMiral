@@ -613,8 +613,7 @@ export default function Hero() {
                   <strong> technology</strong> to build intuitive digital experiences.
                 </p>
                 <p>
-                  Outside of work, I explore music, digital art, travel, and gaming—fueling my creativity, 
-                  curiosity, and drive to innovate.
+                  Outside of work, I enjoy playing instruments like the guitar and piano, watching movies, and serving in my church community as a choir member, lay minister, and altar server.
                 </p>
               </div>
             <div className="journey-photo">
