@@ -609,11 +609,10 @@ export default function Hero() {
               <div className="journey-text">
                 <h2>My Journey <span>in Tech</span></h2>
                 <p>
-                  I’m a <strong>Web Developer</strong> passionate about merging <strong>design</strong> and
-                  <strong> technology</strong> to build intuitive digital experiences.
+                  I’m a <strong>Web Developer</strong> passionate about blending <strong>design</strong> and <strong>technology</strong> to craft intuitive, responsive, and user-focused web experiences. Skilled in <strong>programming</strong>, <strong>UI/UX design</strong>, and <strong>database management</strong>, I aim to build creative and efficient solutions.
                 </p>
                 <p>
-                  Outside of work, I enjoy playing instruments like the guitar and piano, watching movies, and serving in my church community as a choir member, lay minister, and altar server.
+                  Outside of work, I enjoy playing the <strong>guitar</strong> and <strong>piano</strong>, <strong>watching movies</strong>, and serving in my <strong>church community</strong> as a <strong>choir member</strong>, <strong>lay minister</strong>, and <strong>altar server</strong>.
                 </p>
               </div>
             <div className="journey-photo">
