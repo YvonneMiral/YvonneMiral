@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
-import { Menu, X } from "lucide-react";
+import { Menu, X, FileText } from "lucide-react";
+import resumePDF from "./assets/YvonneMiral_Resume.pdf";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -46,6 +47,8 @@ export default function Navbar() {
                   smooth
                   duration={600}
                   offset={-80}
+                  spy
+                  activeClass="nav-active"
                   onClick={closeMenu}
                 >
                   {link.label}
@@ -54,9 +57,18 @@ export default function Navbar() {
             ))}
           </ul>
 
+          <a
+            href={resumePDF}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="nav-resume-btn nav-resume-btn-desktop"
+          >
+            <FileText size={15} /> Resume
+          </a>
+
           {/* Mobile Menu Button */}
           <button className="menu-btn" onClick={toggleMenu}>
-            {menuOpen ? <X size={26} /> : <Menu size={26} />}
+            {menuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
         </div>
       </nav>
@@ -76,6 +88,8 @@ export default function Navbar() {
                 smooth
                 duration={600}
                 offset={-80}
+                spy
+                activeClass="nav-active"
                 onClick={closeMenu}
               >
                 {link.label}
@@ -83,6 +97,15 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
+
+        <a
+          href={resumePDF}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="nav-resume-btn nav-resume-btn-mobile"
+        >
+          <FileText size={16} /> View Resume
+        </a>
       </div>
 
       {/* Overlay */}
