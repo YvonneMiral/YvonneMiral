@@ -146,21 +146,21 @@ export default function Hero() {
     {
       icon: <Code2 size={26} />,
       title: "Custom Software & Web Applications",
-      desc: "End-to-end, full-stack systems built around how your business actually runs — from clean, intuitive UI to secure databases and back-end logic that scales.",
+      desc: "End-to-end, full-stack systems built around how your business actually runs from clean, intuitive UI to secure databases and back-end logic that scales.",
       proof: "Built HR, warehouse, and student management systems",
       tags: ["React.js", "Vue.js", "Node.js", "PHP", "MySQL"],
     },
     {
       icon: <BrainCircuit size={26} />,
-      title: "AI & Computer Vision Solutions",
-      desc: "Turn images and video into decisions. I integrate AI models that detect, classify, and map what matters — automating work that used to take hours of manual inspection.",
-      proof: "AI damage detection for infrastructure & AI bag detection for warehouses",
-      tags: ["YOLOv8", "Edge Impulse", "Python", "Object Detection"],
+      title: "AI-Integrated Systems",
+      desc: "I build the platforms that put AI to work connecting AI models to dashboards, databases, and workflows in close collaboration with AI specialists, so their results become usable tools for real teams.",
+      proof: "Built the systems behind AI damage detection for infrastructure & AI bag detection for warehouses",
+      tags: ["System Integration", "APIs", "Dashboards", "Team Collaboration"],
     },
     {
       icon: <Cpu size={26} />,
       title: "IoT & Real-Time Monitoring",
-      desc: "Connect sensors, stations, and devices to a single live platform with automated alerts — so problems are caught early, not after the damage is done.",
+      desc: "Connect sensors, stations, and devices to a single live platform with automated alerts so problems are caught early, not after the damage is done.",
       proof: "City-wide weather & water-level monitoring for flood-prone Iligan",
       tags: ["Sensors", "Microcontrollers", "Real-Time Data", "Alerts"],
     },
@@ -174,7 +174,7 @@ export default function Hero() {
     {
       icon: <ServerCog size={26} />,
       title: "Deployment, Maintenance & Tech Support",
-      desc: "Reliable systems long after launch — deployment, performance optimization, bug fixes, troubleshooting, and clear technical documentation your team can rely on.",
+      desc: "Reliable systems long after launch deployment, performance optimization, bug fixes, troubleshooting, and clear technical documentation your team can rely on.",
       proof: "Maintained official websites & internal systems at MSU-IIT and Infraspex",
       tags: ["Vercel", "Render", "Hostinger", "Git", "Documentation"],
     },
@@ -690,7 +690,7 @@ export default function Hero() {
           </h2>
           <p className="section-subtitle">
             From AI-powered inspection platforms to real-time IoT monitoring, I build software that
-            solves real problems — proven on government-funded research and live business systems.
+            solves real problems proven on government-funded research and live business systems.
           </p>
         </div>
 
