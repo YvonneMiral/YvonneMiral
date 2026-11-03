@@ -189,6 +189,15 @@ export default function Hero() {
 
   const experienceItems = [
     {
+      title: "Annotator",
+      place: "Tuklas",
+      date: "July 2026 – Present",
+      desc: [
+        "Annotated rocks across image frames for AI-based object detection and recognition.",
+        "Collaborated with the team to ensure accurate and consistent annotations for AI development.",
+      ],
+    },
+    {
       title: "Software Developer",
       place: "Infraspex Inc",
       date: "January 2026 – Present",
