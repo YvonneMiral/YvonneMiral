@@ -1,6 +1,8 @@
 # 💫 About Me:
-A passionate Website & UI/UX Developer and Video Editor who crafts immersive digital experiences blending creativity and code. Based in Iligan City, Philippines.
-
+Software Developer with professional experience in software development, web application
+development, technical support, and digital solutions. Skilled in developing and maintaining
+websites, building custom software, and delivering reliable technology solutions. Adaptable, detailoriented,
+and committed to creating high-quality solutions in fast-paced environments.
 
 ## 🌐 Socials:
 [![GitHub](https://img.shields.io/badge/GitHub-%2312100E.svg?logo=github&logoColor=white)](https://github.com/YvonneMiral) 
